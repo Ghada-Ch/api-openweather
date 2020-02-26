@@ -33,7 +33,7 @@ foreach($json->list as $msg) {
   replace groups,list,id,name as you need from the API json </br>
   Example:</br>
   my json :</br>
-  <img src="images/json.php"></br>
+  <img src="home/ghada/Images/json.png"></br>
   <ul>
   <li>groups=> object</li>
   <li>list=>list</li>
