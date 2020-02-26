@@ -1,8 +1,8 @@
 <html>
 <body>
 <?php
- $url = "http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22?id=ddd472af7108b851e7bc8caafeb9596e";
-    $raw =file_get_contents($url);
+$url="api_url&appid=your_api_key";
+ $raw =file_get_contents($url);
     $json = json_decode($raw);
 
 
