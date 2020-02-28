@@ -1,5 +1,6 @@
 # api-openweather
 # How to use openweather api in php </br>
+![image](https://user-images.githubusercontent.com/57904143/75568373-73372280-5a53-11ea-998c-90c623e816ab.png) </br>
 1_API key </br>
 To use the OpenweatherMap API, you need to obtain an API key. Sign up <a href="https://home.openweathermap.org/users/sign_up">here</a>.</br>
 2_Test your API </br>
@@ -30,18 +31,14 @@ To modify :</br>
 if(!empty($json->groups)) {
 foreach($json->list as $msg) {
     echo "<u>" . $msg->id ."</u> : ". $msg->name;</br>
-  replace groups,list,id,name as you need from the API json </br>
+  replace fields as you need from the API json </br>
   Example:</br>
   my json :</br>
   ![image](https://user-images.githubusercontent.com/57904143/75363532-8fec2280-58ba-11ea-875f-e630d47bbc93.png)</br>
   <ul>
-  <li>groups=> object</li>
-  <li>list=>list</li>
-  <li>id=>id</li>
-  <li>name=>name</li>
+  <li>dt_txt</li>
+  <li>pressure</li>
+  <li>hymidity</li>
   </ul>
-  you can also add</br>
-  foreach($msg->main as $m) {
-    echo "Pressure : " . $msg->pressure ."</br> Hymidity : ". $msg->hymidity;
-    }
+  
     
